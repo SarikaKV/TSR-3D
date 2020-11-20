@@ -1,0 +1,25 @@
+#!/bin/bash
+#PBS -q workq
+#PBS -A loni_efe_md8
+#PBS -l nodes=1:ppn=20
+#PBS -l walltime=72:00:00
+#PBS -j oe
+#PBS -N common_step1_DD
+#PBS -o out_common_step1_DD.out
+
+export NPROCS=`wc -l $PBS_NODEFILE | gawk '//{print $1}'`
+echo  "number of cores = " $NPROCS
+cd $PBS_O_WORKDIR
+
+python /work/wxx6941/TSR/code/Motif_Discovery/searchKeys-11-5-18.py /work/sarikak/TSR/Hierarchical_Classification/Database/ --sample_name sample_DD --search_mode 0 --use_common_keys
+
+ 
+
+
+
+
+
+
+
+
+
