@@ -2,7 +2,6 @@
 
 Code for calculating keys parallely on n-1 CPU cores, where n = Total CPU cores on the system.
 
-@authors: Venkata Sarika Kondra
 '''
 import os,math,ntpath,socket,argparse
 from os.path import expanduser
@@ -14,6 +13,11 @@ from itertools import combinations
 from collections import Counter
 from joblib import Parallel, delayed, cpu_count
 
+__author__ = "Venkata Sarika Kondra"
+
+__version__ = "1.0.1"
+__maintainer__ = "Venkata Sarika Kondra"
+__email__ = "c00219805@louisiana.edu"
 
 parser = argparse.ArgumentParser(description='Parallel Key Generation.')
 parser.add_argument('--sample_name', '-sample', metavar='sample_name', default='t2', \
