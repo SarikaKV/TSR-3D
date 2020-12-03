@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+"""
+The Main function that executes the steps of Sequential Key Generation, Feature Selection, 
+Vectorization, Distance or Similarity measures and Visualization.
+
+"""
+
 import os
 import glob
 import ntpath
