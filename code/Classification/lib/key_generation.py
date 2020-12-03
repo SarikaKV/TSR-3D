@@ -1,10 +1,17 @@
 '''
 
-Code for calculating PDB to TSRs with changed length bins (domain knowledge incorporated)
+Code for sequential calculation of PDB to TSRs with changed length bins (domain knowledge incorporated)
 '''
 import os,math,ntpath
 import glob
 import time
+
+__author__ = "Venkata Sarika Kondra"
+
+__version__ = "1.0.1"
+__maintainer__ = "Venkata Sarika Kondra"
+__email__ = "c00219805@louisiana.edu"
+
 
 class KeyGeneration:
     #Changed according to Sarika's binning
