@@ -15,11 +15,18 @@ Description of the folder structure:
 * data: The data folder contains the datasets details.
 
 ## Instructions for Execution:
-Specifications of dependencies:
+Installing the dependencies:
+The following command will install the packages according to the configuration file requirements.txt
+
+```
+$ pip install -r requirements.txt
+```
+
+Put requirements.txt in the directory where the command will be executed. If it is in another directory, specify the path.
 
 Execution:
 
-We used LONI servers for faster computaion and huge storage resources. If the dataset is smaller (<100 proteins or drugs) one can use their local computers. Below are sample commands for performing Clustering.
+Below are sample commands for performing Clustering.
 
 Sample Generation:
 
@@ -39,4 +46,6 @@ A single script will enable one to run steps from Key Genaration to Clustering. 
 $ python2 ../Classification/__main__.py --path <path_to_the_all_datasets_folder> --sample_name <dataset_or_sample_name> --thetaBounds <theta_bin_boundaries>  --distBounds <distance_bin_boundaries>  --steps '2,3,4,5'
 ```
 If thetaBounds and distBounds are not passed default bin boundaries of 29 bins for Theta and 35 bins for Distance are considered.
+
+We used LONI servers for faster computaion and huge storage resources. If the dataset is smaller (<100 proteins or drugs) one can use their local computers. Hence above commands are writte in a shell script file for execution of all stages at once.
 
