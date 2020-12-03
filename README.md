@@ -49,6 +49,6 @@ If thetaBounds and distBounds are not passed default bin boundaries of 29 bins f
 
 We used LONI servers for faster computaion and huge storage resources. If the dataset is smaller (<100 proteins or drugs) one can use their local computers. Hence above commands are writte in a shell script file for execution of all stages at once.
 
-### Contributors
+## Contributors
 
 * [Sarika Kondra](mailto:sarika.vm35@gmail.com) (the initial author of this repository)
