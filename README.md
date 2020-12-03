@@ -6,7 +6,7 @@ The steps are mentioned in the flow diagram below.
 ![](https://user-images.githubusercontent.com/16475732/100969938-9074b200-34f9-11eb-8c9f-45771abcd777.png)
 
 Description of the folder structure:
-* Classification: It contains the code files of Key Generation, Vector representation of the protein with keys as features and their frequencies as the values, pairwise Jaccard similarity calculation and visualization generation files. The visualization generates heatmaps, dendrgrams and clustermaps of the clustering results.
+* Classification: It contains the code files of Key Generation, Vector representation of the protein with keys as features and their frequencies as the values, pairwise Jaccard similarity calculation and visualization generation files. The visualization generates heatmaps, dendrgrams, clustermaps and multi dimensional scaling (MDS) visualizations of the clustering results.
 * Descritization: This is a precursor for key generation. It contains the code files of Adaptive Unsupervised Iterative Discretization algorithm used in generating bins and bin boundaries to use in key calculation.
 * Helper Functions: It contains miscellaneous code files used in the project.
 * Loni_Scripts: The key generation is computationally intensive. It also requires huge storage. Majority of our calculations were executed at LONI (Louisiana Optical Network Initiative) supercomputers. This folder contains sample shell scripts used.
