@@ -52,3 +52,7 @@ We used LONI servers for faster computaion and huge storage resources. If the da
 ## Contributors
 
 * [Sarika Kondra](mailto:sarika.vm35@gmail.com) (the initial author of this repository)
+
+## Acknowledgements
+
+The authors thank the support from Louisiana Board of Regents (LEQSF(2015-18)-RD-B-06) to W. X. and V.R., and C. Dean Domingue at the Office of Innovation Management, UL Lafayette, for helping to file a U.S. Patent Application. We also thank the support from Srinivasan Ambatipati at DynaChem Research Center and Terry LeBlanc at Global eSolutions Group. Majority of our calculations were executed at LONI. Here we want to appreciate LONI support team; especially, thanks to Yuwu Chen, and Feng Chen.
