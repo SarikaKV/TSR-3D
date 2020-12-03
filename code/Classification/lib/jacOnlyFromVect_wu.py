@@ -7,6 +7,13 @@ import numpy as np
 #import StringIO
 from joblib import Parallel, delayed, cpu_count
 
+__author__ = "Venkata Sarika Kondra"
+
+__version__ = "1.0.1"
+__maintainer__ = "Venkata Sarika Kondra"
+__email__ = "c00219805@louisiana.edu"
+
+
 # def unwrap_self(arg, **kwarg):
 #     print arg[0]
 #     return JaccardCoefficient.process_files(arg[0], arg[1])
