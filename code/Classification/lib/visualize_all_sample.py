@@ -26,6 +26,13 @@ import matplotlib.pyplot as plt
 
 from os.path import expanduser
 
+__author__ = "Venkata Sarika Kondra"
+
+__version__ = "1.0.1"
+__maintainer__ = "Venkata Sarika Kondra"
+__email__ = "c00219805@louisiana.edu"
+
+
 parser = argparse.ArgumentParser(description='Visualize all Samples.')
 parser.add_argument('--path_all_samples', '-path_all_samples', metavar='path_all_samples', \
     default='t1', help='Path of all the sample on which this script should be run.')
