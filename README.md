@@ -3,7 +3,7 @@ This repository contains the code files used for representing proteins 3D struct
 
 
 The steps are mentioned in the flow diagram below.
-![](https://github.com/SarikaKV/TSR-3D/issues/1#issue-755888773)
+![](https://user-images.githubusercontent.com/16475732/100969938-9074b200-34f9-11eb-8c9f-45771abcd777.png)
 
 Specifications of dependencies:
 
