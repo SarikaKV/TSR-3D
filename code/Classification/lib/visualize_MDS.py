@@ -21,6 +21,12 @@ import matplotlib.patches as mpatches
 from matplotlib.collections import LineCollection
 from matplotlib import pyplot
 
+__author__ = "Venkata Sarika Kondra"
+
+__version__ = "1.0.1"
+__maintainer__ = "Venkata Sarika Kondra"
+__email__ = "c00219805@louisiana.edu"
+
 
 class MDS:
 
