@@ -12,6 +12,12 @@ from os.path import expanduser
 
 from lib import KeyGeneration, FeatureSelection, Vectorization, VectorizationNoFS, JaccardCoefficient, Visualize, MDS, VectorizationFSPCA
 
+__author__ = "Venkata Sarika Kondra"
+
+__version__ = "1.0.1"
+__maintainer__ = "Venkata Sarika Kondra"
+__email__ = "c00219805@louisiana.edu"
+
 parser = argparse.ArgumentParser(description='Parallel Key Generation.')
 parser.add_argument('--sample_name', '-sample', metavar='sample_name', \
 	default='t1', help='Name of the sample on which this script should be run.')
