@@ -51,4 +51,4 @@ We used LONI servers for faster computaion and huge storage resources. If the da
 
 ### Contributors
 
-* [Sarika Kondra](mailto:sarika.vm35@gmail.com?subject=[GitHub] TSR-3D)
+* [Sarika Kondra](mailto:sarika.vm35@gmail.com) (the initial author of this repository)
