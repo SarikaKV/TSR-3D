@@ -8,6 +8,13 @@ from sklearn.decomposition import PCA
 from sklearn.metrics.pairwise import cosine_similarity
 from scipy.spatial.distance import pdist,squareform
 
+__author__ = "Venkata Sarika Kondra"
+
+__version__ = "1.0.1"
+__maintainer__ = "Venkata Sarika Kondra"
+__email__ = "c00219805@louisiana.edu"
+
+
 class VectorizationFSPCA:
 
     def __init__(self, **kwargs):
