@@ -5,9 +5,6 @@ This repository contains the code files used for representing proteins 3D struct
 The steps are mentioned in the flow diagram below.
 ![](https://user-images.githubusercontent.com/16475732/100969938-9074b200-34f9-11eb-8c9f-45771abcd777.png)
 
-Specifications of dependencies:
-
-
 Description of the folder structure:
 * Classification: It contains the code files of Key Generation, Vector representation of the protein with keys as features and their frequencies as the values, Jaccard similarity calculation and visualization generation files. The visualization generates heatmaps, dendrgrams and clustermaps of the clustering results.
 * Descritization: This is a precursor for key generation. It contains the code files of Adaptive Unsupervised Iterative Discretization algorithm used in generating bins and bin boundaries to use in key calculation.
@@ -17,8 +14,8 @@ Description of the folder structure:
 
 * data: The data folder contains the datasets details.
 
-
-Installation:
+## Instructions for Execution:
+Specifications of dependencies:
 
 Execution:
 
@@ -27,7 +24,19 @@ We used LONI servers for faster computaion and huge storage resources. If the da
 Sample Generation:
 
 ```
-$ python sample_generation.py --path <path_of the_dataset_SAMPLE-DETAILS_file> --sample_name <dataset_or_sample_name>
+$ python ../Sample_Generation/generate_samples.py --path <path_to_the_all_datasets_folder> --sample_name <dataset_or_sample_name>
+```
+Parallel Key Generation:
+```
+$ python2 ../Classification/lib/key_generation_parallel.py --path <path_to_the_all_datasets_folder> --sample_name <dataset_or_sample_name> --thetaBounds <theta_bin_boundaries>  --distBounds <distance_bin_boundaries> 
+```
+If thetaBounds and distBounds are not passed default bin boundaries of 29 bins for Theta and 35 bins for Distance are considered.
+
+Clustering:
+A single script will enable one to run steps from Key Genaration to Clustering. However key generation step using this script is executed sequentially. Hence consider running the previous parallel mode key generation script before running this. In this case omit '1' in the steps argument.
 
 ```
+$ python2 ../Classification/__main__.py --path <path_to_the_all_datasets_folder> --sample_name <dataset_or_sample_name> --thetaBounds <theta_bin_boundaries>  --distBounds <distance_bin_boundaries>  --steps '2,3,4,5'
+```
+If thetaBounds and distBounds are not passed default bin boundaries of 29 bins for Theta and 35 bins for Distance are considered.
 
